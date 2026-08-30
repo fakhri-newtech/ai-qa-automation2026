@@ -1,0 +1,55 @@
+{
+  "admin_credentials": {
+    "correct_password": "SecureAdmin2026!"
+  },
+  "banned_users": [
+    "hacker99",
+    "scammer_x",
+    "bot_001",
+    "fraud_king",
+    "null_user"
+  ],
+  "request_users": [
+    "john_doe",
+    "sarah_smith",
+    "hacker99",
+    "mike_dev",
+    "guest_12",
+    "bot_001",
+    "alice_w",
+    "scammer_x",
+    "bob_b",
+    "customer_01"
+  ],
+  "cart_totals": [
+    45.99,
+    120.50,
+    0.00,
+    -10.00,
+    5000.00,
+    89.99,
+    15.50,
+    -50.00,
+    0.00,
+    33.20
+  ],
+  "legal_promo_codes": [
+    "SUMMER20",
+    "WELCOME10",
+    "FREESHIP",
+    "BLACKFRIDAY",
+    "SPECIAL50"
+  ],
+  "used_promo_codes": [
+    "SUMMER20",
+    "INVALID_CODE",
+    "WELCOME10",
+    "HACK_THE_DB",
+    "FREESHIP",
+    "EXPIRED_CODE",
+    "WELCOME10",
+    "BADCODE",
+    "SPECIAL50",
+    "TEST123"
+  ]
+}

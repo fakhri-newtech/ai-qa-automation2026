@@ -1,0 +1,36 @@
+Run pytest tests/ --alluredir=allure-results
+============================= test session starts ==============================
+platform linux -- Python 3.11.4, pytest-7.4.0, pluggy-1.2.0
+rootdir: /home/runner/work/playwright-automation-framework/playwright-automation-framework
+plugins: playwright-0.4.0, base-url-2.0.0, allure-pytest-2.13.2
+collected 3 items
+
+tests/test_fast_checkout.py F                                            [ 33%]
+tests/test_cart_fixture.py .                                             [ 66%]
+tests/test_checkout_ai.py .                                              [100%]
+
+=================================== FAILURES ===================================
+___________________________ test_fast_checkout_with_env ________________________
+
+api_logged_in_page = <Page url='https://www.saucedemo.com/inventory.html'>
+
+    def test_fast_checkout_with_env(api_logged_in_page: Page):
+        
+        api_logged_in_page.locator("[data-test='add-to-cart-sauce-labs-backpack']").click()
+        api_logged_in_page.locator(".shopping_cart_link").click()
+>       api_logged_in_page.locator("[data-test='check-out-button']").click()
+
+tests/test_fast_checkout.py:12: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def click(self, **kwargs):
+>       return self._sync(self._impl_obj.click(**kwargs))
+E       playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
+E       Call log:
+E       waiting for locator("[data-test='check-out-button']")
+
+/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/playwright/sync_api/_generated.py:15450: TimeoutError
+=========================== short test summary info ============================
+FAILED tests/test_fast_checkout.py::test_fast_checkout_with_env - playwright._impl._api_types.TimeoutError: Timeout 30000ms exceeded.
+========================= 1 failed, 2 passed in 35.12s =========================
+Error: Process completed with exit code 1.

@@ -1,0 +1,19 @@
+# ==========================================
+# THE MEGA-PROMPT TEMPLATE (Share with students)
+# ==========================================
+Act as a Senior Python SDET. I am building a Playwright Pytest framework.
+I need you to write a new test called `test_add_multiple_items_to_cart`.
+
+Here are my strict SDET Constraints:
+- Use Pytest and the provided fixtures.
+- Use Playwright's web-first assertions (expect).
+- NO hardcoded sleeps.
+- Do not invent any locators or methods that are not in the provided classes.
+
+Here is my conftest.py so you know my fixtures:
+[PASTE YOUR CONFTEST.PY HERE]
+
+Here is my inventory_page.py (or checkout_page.py) so you know my locators/actions:
+[PASTE YOUR POM FILE HERE]
+
+Task: Write a test that uses the `api_logged_in_page` fixture, navigates the inventory, adds two different items to the cart, and asserts that the shopping cart badge shows '2'.
