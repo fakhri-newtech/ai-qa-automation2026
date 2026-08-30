@@ -15,7 +15,7 @@ git remote add origin YOUR URL
 git add .
 
 # 5. Save the snapshot with a descriptive message
-git commit -m "comment that explains what we did"
+git commit -m "comment that explains what we did" 
 
 # 6. Push the branch to the cloud
 git push -u origin feature/homework12
