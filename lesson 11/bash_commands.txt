@@ -1,0 +1,41 @@
+# ==========================================
+# TERMINAL: Git Golden Path Execution
+# ==========================================
+
+# 1. Initialize Git in the local project
+git init
+
+# 2. Create a safe working branch (Instead of using main/master)
+git checkout -b feature/homework12
+
+# 3. Link local project to the GitHub Cloud (Replace URL with student's actual URL)
+git remote add origin YOUR URL
+
+# 4. after we finish the code Stage all files (except those in .gitignore!)
+git add .
+
+# 5. Save the snapshot with a descriptive message
+git commit -m "comment that explains what we did"
+
+# 6. Push the branch to the cloud
+git push -u origin feature/homework12
+
+
+# ==========================================
+# 🧠 INSTRUCTOR NOTES: Command Breakdown & PR Demo
+# ==========================================
+# 1. The Security Check (Before `git add .`):
+#    Physically walk around or ask them to confirm in the chat: "Is your .env 
+#    file ignored?" If they skip this, their SauceLabs password goes public.
+#
+# 2. `git checkout -b feature/framework-setup`:
+#    Explain: "The `-b` stands for 'branch'. We are branching off the main tree. 
+#    This isolates our new framework code so we don't break the stable main code."
+#
+# 3. Pull Request (PR) Demo in the Browser:
+#    - Have the students go back to their GitHub repo in the browser.
+#    - They will see a green button that says "Compare & pull request".
+#    - Tell them to click it, give it a title, and click "Create pull request".
+#    - Explain: "Congratulations! You just submitted your code for review. In a 
+#      real job, a Senior QA would look at this PR, leave comments, and then 
+#      click 'Merge'. Since we are the owners, go ahead and click 'Merge pull request'!"
