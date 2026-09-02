@@ -14,7 +14,7 @@ def test_support_faithfulness():
 # def test_support_faithfulness(): 
 #     Standard Pytest 
 #     test function for 
-#     checking model faithfulness.
+#     checking model faithfulness
 
 # test_case = LLMTestCase(...): 
 #     Combines prompt, output, 
