@@ -23,33 +23,13 @@ def test_live_support_bot():
     metric = AnswerRelevancyMetric(threshold=0.7)
     assert_test(test_case, [metric])
 
-# client = OpenAI(): 
-#     Instantiates the OpenAI client, 
-#     automatically fetching your API key 
-#     from environment variables or .env.
 
-# user_prompt = "...": 
-#     Defines the live query string 
-#     sent to the AI model.
+#     client = OpenAI(): Instantiates the OpenAI API client (automatically fetches your API key from the local environment or .env configuration).
 
-# client.chat.completions.create(...): 
-#     Sends a live network request 
-#     to OpenAI using the specified 
-#     model and messages.
+# user_prompt = "...": Defines the live query string to be sent to the model.
 
-# response.choices[0].message.content: 
-#     Extracts the raw text string 
-#     from the live model response.
+# client.chat.completions.create(...): Sends a live network request to OpenAI's API using the specified model (gpt-4o) and input messages.
 
-# test_case = LLMTestCase(...): 
-#     Packages the live prompt and 
-#     live AI response into a test 
-#     case object.
+# response.choices[0].message.content: Extracts the raw text string returned by the live model response, capturing dynamic generative output.
 
-# metric = AnswerRelevancyMetric(threshold=0.7): 
-#     Initializes the relevance metric 
-#     with a 70% passing threshold.
-
-# assert_test(test_case, [metric]): 
-#     Runs DeepEval's evaluation pipeline 
-#     on the live generative output.
+# Dynamic wiring: Feeds the live model output directly into LLMTestCase so that every time Pytest runs, it evaluates real-time AI behavior instead of hardcoded strings.
